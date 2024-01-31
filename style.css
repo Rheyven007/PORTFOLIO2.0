@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+   background-image: url(bg.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   width: 100vw;
+   height: 70vh;
+}
+
+nav{
+    background-color: rgba(58, 2, 65, 0.826);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+   position: fixed;
+   z-index: 100;
+   
+}
+/* for the nav icon*/
+nav i{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'poppins' , sans-serif;
+    padding-right: 5px;
+    transition: 0.5s ease;
+}
+ul:hover i {
+    color:#ffffff;
+    
+  
+}
+ i:not(:hover) {
+    color: #ffffff;
+    opacity: 0.9;
+    
+}
+/*for the nav link*/
+nav .name{
+    color:#fff;
+    font-family:'poppins' , sans-serif;
+    padding: 2rem;
+    flex: 1;
+    font-size: 20px;
+}
+
+
+nav a{
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'poppins' , sans-serif;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: #000000;
+}
+ul{
+    font-family: 'poppins' , sans-serif;
+    display: flex;
+    gap: 50px;
+}
+ul li{
+    list-style: none;
+    padding: 15px 20px;
+}
+ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: 0.5s ease;
+}
+ul:hover li a {
+    color:#c200d8;
+    text-decoration: underline;
+}
+ul:hover li a:not(:hover) {
+    color: rgb(255, 255, 255);
+    opacity: 0.3;
+    filter: blur(1px);
+}
+/* intro */
+.intro{
+    width: 100vw;
+    display: flex;
+    padding-left: 70px;
+    padding-top: 2rem;
+    height: 100vh;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* Add a class for the animation when it's in view */
+  .in-view {
+    opacity: 1;
+    transform: scale(1);
+  }
+h1.name2{
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.847);
+    font-family: 'Nova Square', sans-serif;
+}
+
+p.greet{
+    font-size: 25px;
+    color:#fff;
+    font-family:'poppins' , sans-serif;
+}
+p.line-1{
+    font-family:'poppins' , sans-serif;
+    color:#c200d8;
+    border-right: 2px solid rgba(255, 0, 0, 0.75);
+    font-size: 35px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:8.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: white;}
+  to{border-right-color: transparent;}
+}
+/* the pic*/
+.i{
+    width: 600px; 
+}
+p.mess{
+    width: 42rem;
+    color: #ffffff9a;
+    font-family:'poppins' , sans-serif;
+    text-align: justify;
+}
+/*for the soc me acc*/
+.socmed{
+    display: flex;
+    gap: 10px;
+}
+.fa-facebook{
+    font-size: 30px;
+    color: rgb(109, 109, 109);
+    transition: 0.5s;
+}
+.fa-facebook:hover{
+    font-size: 40px;
+    color: blue;
+    transition: 0.5s;
+}
+.fa-instagram {
+    font-size: 30px;
+    color: rgb(109, 109, 109);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.fa-instagram:hover {
+    color: #fff;
+    font-size: 40px;
+    background: linear-gradient(to bottom, #1100ff 0%,  #FD1D1D 100%);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.fa-telegram{
+    font-size: 30px;
+    color: rgb(109, 109, 109);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.fa-telegram:hover{
+    font-size: 40px;
+    color: rgb(0, 208, 255);
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.tiktok{
+ width: 30px;
+ height: 30px;
+ filter: grayscale(100%);
+ border: 1px solid gray;
+ border-radius: 20px;
+ transition: 0.5s;
+}
+.tiktok:hover{
+    width: 45px;
+    height: 45px;
+    filter: saturate(10);
+     transition: 0.5s;
+     border-radius:50% ;
+}
+/*page2*/
+#page2 {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+}
+.skill{
+    padding: 2rem;
+  }
+
+h1.des {
+    padding: 1rem 2rem 2rem 2rem;
+    color: #c200d8;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 40px;
+}
+/*comprog.languages*/
+div.st{
+    
+    border: 1px solid #c200d8;
+    padding: 2rem;
+    width: auto;
+}
+div.d{
+display: flex;
+gap: 5rem;
+}
+div.pl{
+    padding: 1rem;
+    background: linear-gradient(to bottom, #c200d8a1 0%,#1c0020be 100%);
+    width: 20rem;
+    transition: ease .5s;
+    text-align: center;
+}
+
+
+.fa-html5 {
+    font-size: 70px;
+    transition: ease .5s;
+    text-align: center;
+    
+}
+.fa-html5:hover {
+    font-size: 90px;
+    color: orange;
+    transition: ease .5s;
+    filter: saturate(10);
+}
+.fa-css3-alt{
+    font-size: 70px;
+    transition: ease .5s;
+    text-align: center;
+    
+}
+.fa-css3-alt:hover {
+    font-size: 90px;
+    color: rgb(0, 106, 255);
+    transition: ease .5s;
+    filter: saturate(10);
+}
+.js{
+   width: 70px;
+    transition: ease .5s;
+    text-align: center;
+    filter: grayscale(50);
+}
+.js:hover {
+    width: 90px;
+    color: rgb(0, 106, 255);
+    transition: ease .5s;
+    filter: saturate(10);
+}
+p.clas{
+    padding: 10px;
+    color: white;
+    font-family:'poppins' , sans-serif;
+}
+.pl .L-name {
+    padding: 20px;
+    color: white;
+    font-family:'poppins' , sans-serif;
+    text-align: center;
+}
+p.disclaimer {
+    padding: 1em;
+    color: #ffffff9a;
+    font-family:'poppins' , sans-serif;
+    text-align: justify;
+}
+/*page3*/
+#page3 {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    align-content: center;
+}
+div.st2{
+    
+    border: 1px solid #c200d8;
+    padding: 2rem;
+    width: auto;
+}
+div.d2{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+div.po {
+    background: linear-gradient(to bottom, #c200d8a1 0%,#1c0020be 100%);
+    padding: 1rem;
+    width: auto;
+    transition: ease .5s;
+    text-align: center;
+}
+
+img.projects-img{
+    width: 300px;
+    height: 150px;
+    transition: ease .5s;
+}
+img.projects-img:hover{
+    width: 400px;
+    height: 200px;
+    transition: ease .5s;
+}
+.p-name {
+    color: #ffffff;
+    font-family:'poppins' , sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+.fa-link{
+    color: white;
+    font-size: 15px;
+}
+.pclas {
+
+    padding: 10px;
+    color: white;
+    font-family:'poppins' , sans-serif;
+}
+/*page4*/
+#page4 {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    align-content: center;
+}
+div.st3{
+    border: 1px solid #c200d8;
+    padding: 2rem;
+    width: auto;
+    display: flex;
+    gap: 1rem;
+}
+div.pic-con {
+    
+    width:auto;
+}
+.mypic {
+    width: 300px;
+    height:300px ;
+    background: linear-gradient(to bottom, #c200d8a1 0%,#1c0020be 100%);
+}
+h1.dev-name {
+    padding-top: 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family:'poppins' , sans-serif;
+}
+.myt {
+    color: white;
+    font-family:'poppins' , sans-serif;
+    text-align: center;
+}
+.info{
+    background: linear-gradient(to bottom, #1c0020be  0%,#c200d869 100%);
+    padding: 30px;
+}
+
+p.short-intro {
+    color: white;
+    font-size: 18px;
+    font-family:'poppins' , sans-serif;
+    text-align: justify;
+}
+div.contacts {
+    background-color: #00000063;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+p.con-in{
+    padding: 10px;
+    color: white;
+    font-family:'poppins' , sans-serif;
+    font-size: 15px;
+}
+.footer {
+    background-color: #1c0020;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+/*footer*/
+.footer{
+    font-family: 'Arial', sans-serif;
+}
+  .footer p {
+    margin: 0;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
